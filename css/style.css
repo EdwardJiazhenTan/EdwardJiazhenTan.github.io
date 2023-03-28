@@ -12,9 +12,9 @@
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
+    --bg-color: #fff;
+    --second-bg-color: #d2cdd4;
+    --text-color: black;
     --main-color: rgb(134, 41, 160);
 }
 
