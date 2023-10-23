@@ -1,3 +1,3 @@
-# www.EdwardJiazhenTan.github.io
+# http://edwardjtan.me/
 
 This is my personal website
