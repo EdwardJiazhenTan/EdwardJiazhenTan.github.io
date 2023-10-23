@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import DigitalClock from './DigitalClock';
+import DigitalClock from './DigitClock';
 
 function App() {
   return (
