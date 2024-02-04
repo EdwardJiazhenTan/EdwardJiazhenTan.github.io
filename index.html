@@ -1,147 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edward Tan portfolio</title>
-
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>LeetCode Question Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .question {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+    </style>
 </head>
-
 <body>
 
-    <!-- header design -->
-    <header class="header">
-        <a href="#" class="logo">My Portfolio</a>
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Find Question</a>
+    <a href="#">About</a>
+</div>
 
-        <div class='bx bx-menu' id="menu-icon"></div>
+<div class="container">
+    <h2>Find Your LeetCode Question</h2>
+    <form>
+        <label for="dataStructure">Choose a Data Structure:</label>
+        <select id="dataStructure" name="dataStructure">
+            <option value="arrays">Arrays</option>
+            <option value="trees">Trees</option>
+            <option value="linkedlist">LinkedList</option>
+            <!-- Add more options as needed -->
+        </select>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+        <label for="studyTime">Study Time:</label>
+        <select id="studyTime" name="studyTime">
+            <option value="30mins">30 mins</option>
+            <option value="1hour">1 hour</option>
+            <option value="2hours">2 hours</option>
+            <!-- Add more options as needed -->
+        </select>
 
-    <!-- home section design -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Edward Tan</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p></p>
-            <div class="social-media">
-                <a href="https://github.com/EdwardJiazhenTan"><i class='bx bxl-github'></i></a>
-                <a href="https://twitter.com/EdwardEtan7"><i class='bx bxl-twitter'></i></a>
-                <a href="https://www.instagram.com/edward51322/"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://www.linkedin.com/in/edward-j-tan/"><i class='bx bxl-linkedin'></i></a>
-            </div>
-            <a href="images/resume-Edward_Tan_03_22.pdf" target = "_blank" class="btn">Download Resume</a>
-        </div>
+        <label for="company">Company:</label>
+        <select id="company" name="company">
+            <option value="google">Google</option>
+            <option value="facebook">Facebook</option>
+            <option value="amazon">Amazon</option>
+            <!-- Add more options as needed -->
+        </select>
 
-        <div class="home-img">
-            <img src="images/home.png" alt="">
-        </div>
-    </section>
+        <button type="submit">Find Question</button>
+    </form>
 
-    <!-- about section design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/about.png" alt="">
-        </div>
+    <div class="question">
+        <h3>Question Title Here</h3>
+        <p>Description of the question...</p>
+        <!-- You can dynamically insert question content here based on user selection -->
+    </div>
+</div>
 
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Frontend Developer!</h3>
-            <p>	Proficient in HTML, CSS, and JavaScript, with experience using Python Flask to 
-                build web applications and using AJAX and jQuery to create dynamic and interactive web pages.
-                Proficient in Java and Python, skilled use of data structure and algorithms.
-                Capable of operating macOS, windows 7/10, and arch Linux. 
-                </p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
-
-
-    <!-- portfolio section design -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>My github</p>
-                    <a href="https://github.com/EdwardJiazhenTan"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/portfolio2.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Know More about Me</h4>
-                    <p>To be continue</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/portfolio3.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Current Project</h4>
-                    <p>To be continue</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-    </section>
-
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>me</span></h2>
-
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
-
-    <!-- footer design -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 @ Edward J Tan | All Rights Reserved.</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </footer>
-
-
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- custom js -->
-    <script src="js/script.js"></script>
 </body>
-
 </html>
