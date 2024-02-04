@@ -1,3 +1,4 @@
-# http://edwardjtan.me/
+Project website for class csc261 in Univeristy of Rochester
 
-This is my personal website
+
+edwardjerry.tech
