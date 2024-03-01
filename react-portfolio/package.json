@@ -14,7 +14,7 @@
     "react-scroll": "^1.9.0",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://EdwardJiazhenTan.github.io",
+  "homepage": "https://EdwardJiazhenTan.github.io/EdwardJiazhenTan.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
