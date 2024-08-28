@@ -17,8 +17,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to='about' smooth={true} duration={500}>
-              Experience
+            <Link to='work' smooth={true} duration={500}>
+              Work
             </Link>
           </li>
           <li>
@@ -43,25 +43,25 @@ const Navbar = () => {
       <div className='flex space-x-4'>
         <a
           className='flex justify-between items-center text-gray-300'
-          href='https://www.linkedin.com/in/edward-j-tan/'
+          target = "_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/edward-j-tan/'
         >
           <FaLinkedin size={30} />
         </a>
         <a
           className='flex justify-between items-center text-gray-300'
-          href='https://github.com/EdwardJiazhenTan'
+          target = "_blank" rel="noopener noreferrer" href='https://github.com/EdwardJiazhenTan'
         >
           <FaGithub size={30} />
         </a>
         <a
           className='flex justify-between items-center text-gray-300'
-          href="mailto:etan7@u.rochester.edu"
+          target = "_blank" rel="noopener noreferrer" href="mailto:etan7@u.rochester.edu"
         >
           <HiOutlineMail size={30} />
         </a>
         <a
           className='flex justify-between items-center text-gray-300'
-          href='/'
+          target = "_blank" rel="noopener noreferrer" href='/assets/resume.pdf'
         >
           <BsFillPersonLinesFill size={30} />
         </a>

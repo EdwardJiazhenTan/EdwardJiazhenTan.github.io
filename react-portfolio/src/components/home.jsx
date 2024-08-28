@@ -10,7 +10,7 @@ const Home = () => {
           Edward Tan
         </h1>
         <h2 className='text-4xl sm:text-7xl font-bold '>
-          I'm a Senior Computer Science Student.
+          I'm a Senior CS Student.
         </h2>
         <p className='text-[#151515] py-4 max-w-[700px]'>
           I’m a Senior Computer Science Student at Univeristy of Rochester, aim to be a Software Engineer. I have a passion for coding and learning new technologies. I have experience in Full Stack Development, Machine Learning, and Data Science. I am always looking for new opportunities to learn and grow.
