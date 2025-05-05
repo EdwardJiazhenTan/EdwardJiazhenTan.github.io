@@ -121,11 +121,11 @@ export default function Skills() {
 const Container = styled.div`
   width: 100%;
   height: 50vh;
-  background: #8a8d8c;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 30px;
+  text-color: #a6adc8;
   font-family: ui-monospace, monospace;
   user-select: none;
 `;
@@ -133,8 +133,6 @@ const Frame = styled.div`
   position: relative;
   padding: 4px 0 0;
   overflow-x: hidden;
-  color: #24292e;
-  fill: #24292e;
 `;
 const Title = styled.span`
   vertical-align: middle;

@@ -1,3 +1,4 @@
+// src/sections/Contact.jsx
 import React from "react";
 import Title from "../components/Title";
 
@@ -5,39 +6,36 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#8a8d8c] flex justify-center items-center p-4"
+      className="w-full h-screen bg-ctp-base flex justify-center items-center p-4"
     >
       <form
         method="POST"
         action="https://getform.io/f/1aK0LGbQ"
-        className="flex flex-col max-w-[600px] w-full"
+        className="flex flex-col text-ctp-text max-w-[600px] w-full"
       >
-        <Title> Contact Me </Title>
-        <br />
+        <Title>Contact Me</Title>
+
         <input
-          className="bg-[#ccd6f6] p-2"
+          className="bg-ctp-overlay2 placeholder-ctp-crust p-2 mt-4"
           type="text"
           placeholder="Name"
           name="name"
         />
         <input
-          className="my-4 p-2 bg-[#ccd6f6]"
+          className="my-4 p-2 bg-ctp-overlay2 placeholder-ctp-crust"
           type="email"
           placeholder="Email"
           name="email"
         />
 
-        {/* Wrap textarea and button in a relative container */}
         <div className="relative">
           <textarea
-            className="bg-[#ccd6f6] p-2 w-full"
+            className="bg-ctp-overlay2 p-2 w-full placeholder-ctp-crust"
             name="message"
-            rows="10"
+            rows="6"
             placeholder="Message"
-          ></textarea>
-
-          {/* Position the button absolutely within the container */}
-          <button className="absolute bottom-2 right-2 text-[#3d4357] hover:bg-[#8a8d8c] bg-[#ded9ce] hover:border-[#d9cbb0] px-4 py-2">
+          />
+          <button className="absolute bottom-2 right-2 bg-ctp-mauve hover:bg-ctp-mauve text-ctp-crust px-4 py-2 rounded">
             Send
           </button>
         </div>
