@@ -19,16 +19,19 @@ jobs:
         with:
           node-version: "18"
 
-      # 3. Install dependencies & build
-      - name: Install & Build
-        run: |
-          npm install
-          npm run build
+      # 3. Install dependencies (inside react-portfolio)
+      - name: Install dependencies
+        working-directory: ./react-portfolio
+        run: npm install
 
-      # 4. Deploy the `build/` folder to gh-pages branch
+      # 4. Build (inside react-portfolio)
+      - name: Build
+        working-directory: ./react-portfolio
+        run: npm run build
+
+      # 5. Deploy the build folder
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          # optionally: publish_branch: gh-pages
+          publish_dir: ./react-portfolio/build
