@@ -1,29 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.47acedce.css",
-    "main.js": "/static/js/main.343d6c6d.js",
+    "main.css": "/static/css/main.7339aa27.css",
+    "main.js": "/static/js/main.6930ceb6.js",
     "static/media/edward4.jpeg": "/static/media/edward4.8a8b617f2c404d0e5cc4.jpeg",
     "static/media/edward5.jpeg": "/static/media/edward5.3c0803d92bea52a32d46.jpeg",
     "static/media/edward2.jpeg": "/static/media/edward2.097a6039e40f63c3f9fc.jpeg",
-    "static/media/edward6.jpeg": "/static/media/edward6.0f8f43779045c7ef9938.jpeg",
     "static/media/edward3.jpeg": "/static/media/edward3.326004f01e88724242ad.jpeg",
     "static/media/edward1.jpeg": "/static/media/edward1.2dca2095c9051ab0cbcf.jpeg",
-    "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
-    "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
-    "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
-    "static/media/thinking.jpeg": "/static/media/thinking.c33262a457b82b719b6d.jpeg",
-    "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
-    "static/media/coding.jpeg": "/static/media/coding.15967cd54ebab8d25447.jpeg",
+    "static/media/project5.png": "/static/media/project5.da9d0c4c45389eb20a5c.png",
+    "static/media/project1.png": "/static/media/project1.10d0302eaf32de1d14e3.png",
+    "static/media/project6.png": "/static/media/project6.ae419a06566ae35fb641.png",
+    "static/media/project3.png": "/static/media/project3.f050e912c91988cdab67.png",
+    "static/media/project2.png": "/static/media/project2.9d510d905e06f5547a0f.png",
+    "static/media/project4.png": "/static/media/project4.2fd6e2639448df3ddaf1.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.47acedce.css.map": "/static/css/main.47acedce.css.map",
-    "main.343d6c6d.js.map": "/static/js/main.343d6c6d.js.map"
+    "main.7339aa27.css.map": "/static/css/main.7339aa27.css.map",
+    "main.6930ceb6.js.map": "/static/js/main.6930ceb6.js.map"
   },
   "entrypoints": [
-    "static/css/main.47acedce.css",
-    "static/js/main.343d6c6d.js"
+    "static/css/main.7339aa27.css",
+    "static/js/main.6930ceb6.js"
   ]
 }
