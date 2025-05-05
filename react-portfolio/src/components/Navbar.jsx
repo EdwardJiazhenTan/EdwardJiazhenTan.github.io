@@ -1,76 +1,79 @@
-import React, { useState } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import React from "react";
+import { scroller } from "react-scroll";
+import Dock from "./Dock";
+import {
+  VscHome,
+  VscBriefcase,
+  VscPerson,
+  VscProject,
+  VscMail,
+} from "react-icons/vsc";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
+  // helper to scroll to a section
+  const goTo = (section) =>
+    scroller.scrollTo(section, { smooth: true, duration: 500 });
 
-  const handleSetActive = (to) => {
-    setActive(to);
-  };
+  const items = [
+    // page links
+    { icon: <VscHome size={24} />, label: "Home", onClick: () => goTo("home") },
+    {
+      icon: <VscBriefcase size={24} />,
+      label: "Work",
+      onClick: () => goTo("work"),
+    },
+    {
+      icon: <VscPerson size={24} />,
+      label: "About",
+      onClick: () => goTo("about"),
+    },
+    {
+      icon: <VscProject size={24} />,
+      label: "Projects",
+      onClick: () => goTo("projects"),
+    },
+    {
+      icon: <VscMail size={24} />,
+      label: "Contact",
+      onClick: () => goTo("contact"),
+    },
+
+    // social icons
+    {
+      icon: <FaLinkedin size={24} />,
+      label: "LinkedIn",
+      onClick: () =>
+        window.open("https://linkedin.com/in/edward-j-tan", "_blank"),
+    },
+    {
+      icon: <FaGithub size={24} />,
+      label: "GitHub",
+      onClick: () =>
+        window.open("https://github.com/EdwardJiazhenTan", "_blank"),
+    },
+    {
+      icon: <VscMail size={24} />,
+      label: "Email",
+      onClick: () => (window.location = "mailto:etan7@u.rochester.edu"),
+    },
+    {
+      icon: <BsFillPersonLinesFill size={24} />,
+      label: "Resume",
+      onClick: () => window.open("/assets/resume.pdf", "_blank"),
+    },
+  ];
 
   return (
-    <div className="fixed w-full h-[50px] flex justify-between items-center px-4 bg-ctp-surface0 text-ctp-subtext1">
-      {/* Menu */}
-      <div>
-        <ul className="hidden md:flex">
-          {["home", "work", "about", "projects", "contact"].map((item) => (
-            <li key={item}>
-              <Link
-                to={item}
-                smooth={true}
-                duration={500}
-                className={`px-2 rounded ${
-                  active === item
-                    ? "bg-white text-[#8a8d8c]"
-                    : "hover:bg-[#b2b2b2]"
-                }`}
-                onSetActive={handleSetActive}
-              >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* Social icons */}
-      <div className="flex space-x-4">
-        <a
-          className="flex justify-between items-center text-ctp-sky hover:text-white"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/edward-j-tan/"
-        >
-          <FaLinkedin size={30} />
-        </a>
-        <a
-          className="flex justify-between items-center text-ctp-crust hover:text-white"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/EdwardJiazhenTan"
-        >
-          <FaGithub size={30} />
-        </a>
-        <a
-          className="flex justify-between items-center text-ctp-rosewater hover:text-white"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="mailto:etan7@u.rochester.edu"
-        >
-          <HiOutlineMail size={30} />
-        </a>
-        <a
-          className="flex justify-between items-center text-ctp-mantle hover:text-white"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="/assets/resume.pdf"
-        >
-          <BsFillPersonLinesFill size={30} />
-        </a>
-      </div>
+    // position dock wherever you like; here we fix it to bottom
+    <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
+      <Dock
+        items={items}
+        panelHeight={68}
+        baseItemSize={50}
+        magnification={70}
+      />
     </div>
   );
 };
