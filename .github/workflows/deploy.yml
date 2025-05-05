@@ -5,33 +5,39 @@ on:
     branches:
       - main
 
+# Grant the token rights to update branches and Pages
+permissions:
+  contents: write # allow pushing commits
+  pages: write # allow updating GitHub Pages
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    # (you can repeat permissions here if you prefer per-job granularity)
+    permissions:
+      contents: write
+      pages: write
 
     steps:
-      # 1. Check out your code
-      - uses: actions/checkout@v3
+      - name: Check out code
+        uses: actions/checkout@v3
 
-      # 2. Install Node.js
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: "21"
 
-      # 3. Install dependencies (inside react-portfolio)
       - name: Install dependencies
+        run: npm ci
         working-directory: ./react-portfolio
-        run: npm install
 
-      # 4. Build (inside react-portfolio)
       - name: Build
-        working-directory: ./react-portfolio
         run: npm run build
+        working-directory: ./react-portfolio
 
-      # 5. Deploy the build folder
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./react-portfolio/build
