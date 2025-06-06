@@ -1,0 +1,43 @@
+{
+  "app": {
+    "name": "react-portfolio",
+    "version": "0.1.0",
+    "description": "Personal portfolio website built with React"
+  },
+  "development": {
+    "apiUrl": "http://localhost:3000/api",
+    "baseUrl": "http://localhost:3000",
+    "debugMode": true,
+    "environment": "development"
+  },
+  "production": {
+    "apiUrl": "https://edwardjiazhentan.github.io/api",
+    "baseUrl": "https://edwardjiazhentan.github.io",
+    "debugMode": false,
+    "environment": "production"
+  },
+  "features": {
+    "enableAnimations": true,
+    "enableParallax": true,
+    "enableContactForm": true,
+    "enableAnalytics": false,
+    "enableDarkMode": true
+  },
+  "social": {
+    "github": "",
+    "linkedin": "",
+    "twitter": "",
+    "email": ""
+  },
+  "seo": {
+    "title": "Edward Jiazhen Tan - Portfolio",
+    "description": "Personal portfolio showcasing projects and skills",
+    "keywords": "portfolio, web development, react, frontend",
+    "author": "Edward Jiazhen Tan"
+  },
+  "build": {
+    "outputDir": "build",
+    "publicPath": "/",
+    "sourceMap": false
+  }
+}
