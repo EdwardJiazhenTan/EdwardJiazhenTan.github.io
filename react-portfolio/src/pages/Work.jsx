@@ -14,37 +14,31 @@ const workItems = [
     company: "GTSP Group",
     date: "12-2024 – 02-2025",
     description:
-      "Containerized the UE5 backend, cutting rollout time from 15 min to 5 min.",
+      "Built Python tuning tools and revamped gRPC streams for an LLM-powered avatar platform, reducing latency by 500 ms.",
   },
   {
-    position: "Freelance Web Developer",
-    company: "Self Employed",
-    date: "08-2024 – 05-2025",
-    description:
-      "Launched a Next.js–Spring e-commerce site, boosting client revenue by 60 %.",
-  },
-  {
-    position: "Software Dev & Research Assistant",
+    position: "Software Developer Intern",
     company: "Peking University",
     date: "05-2024 – 08-2024",
     description:
-      "Upgraded 3D reconstruction APIs and CI/CD, securing $75 k in new funding.",
+      "Replaced JSON with MessagePack in WebSocket pipelines, cutting bandwidth 45% and saving 3 hours/week for ML researchers.",
   },
   {
     position: "Teaching Assistant",
     company: "University of Rochester",
     date: "01-2023 – 05-2023",
     description:
-      "Tutored CSC 172 students in Java DS&A, improving average project grades by 10 %.",
+      "Tutored CSC 172 students in Java DS&A, helping boost average project scores by 10%.",
   },
   {
     position: "Barista",
     company: "Starbucks",
     date: "06-2022 – 08-2022",
     description:
-      "Served high-volume customers efficiently, maintaining 95 % satisfaction scores.",
+      "Served 200+ daily customers efficiently while maintaining a 95% satisfaction rate.",
   },
 ];
+
 
 export default function Work() {
   return (
